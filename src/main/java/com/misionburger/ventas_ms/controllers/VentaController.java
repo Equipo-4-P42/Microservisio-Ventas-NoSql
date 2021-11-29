@@ -14,12 +14,10 @@ import java.util.List;
 public class VentaController {
 
     private final PlatoRepository platoRepository;
-    private final CustomerRepository customerRepository;
     private final VentaRepository ventaRepository;
 
-    public VentaController(PlatoRepository platoRepository, CustomerRepository customerRepository, VentaRepository ventaRepository) {
+    public VentaController(PlatoRepository platoRepository, VentaRepository ventaRepository) {
         this.platoRepository = platoRepository;
-        this.customerRepository = customerRepository;
         this.ventaRepository = ventaRepository;
     }
 
